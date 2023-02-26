@@ -42,6 +42,11 @@ function guardar(e) {
         return;
     }
     document.querySelector(".main__error").classList.remove("active");
+
+    document.querySelector(".main__success").classList.add("active");
+    setTimeout(() => {
+        document.querySelector(".main__success").classList.remove("active");
+    }, 4000);
     // ---------------------------------------------------------
 
     var totalfiles = arrImages.length;

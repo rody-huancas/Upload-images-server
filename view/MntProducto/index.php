@@ -5,6 +5,10 @@
             <span class="main__error-title">¡Error!</span>
             <p class="main__error-description">Debes llenar los campos</p>
         </div>
+        <div class="main__success">
+            <span>¡Éxito!</span>
+            <p>Se subió correctamente</p>
+        </div>
         <form class="main__form" method="POST" id="producto_form">
             <div class="main__group">
                 <div class="main__group-form">
