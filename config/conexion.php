@@ -7,7 +7,12 @@ class Conectar
     protected function Conexion()
     {
         try {
-            $conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=dropzone", "root", "rody1999");
+            $local = "localhost";
+            $bd = "dropzone";
+            $user = "root";
+            $password = "rody1999";
+
+            $conectar = $this->dbh = new PDO("mysql:local=$local;dbname=$bd", $user, $password);
             return $conectar;
         } catch (Exception $e) {
             print "¡Error BD!: " . $e->getMessage() . "<br/>";
