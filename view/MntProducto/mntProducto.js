@@ -20,11 +20,11 @@ myDropzone.on("removedfile", file => {
 
 function init() {
     $("#producto_form").on("submit", function (e) {
-        guardar_editar(e);
+        guardar(e);
     });
 }
 
-function guardar_editar(e) {
+function guardar(e) {
     e.preventDefault();
     var formData = new FormData($("#producto_form")[0]);
 
